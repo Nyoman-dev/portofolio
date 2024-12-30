@@ -16,8 +16,8 @@ import {
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
-const pdfLink = "/public/pdf/nyoman-cv.pdf";
 export default function Home() {
 	useEffect(() => {
 		AOS.init();
@@ -122,9 +122,11 @@ export default function Home() {
 								data-aos='flip-left'
 								data-aos-duration='1000'
 								className=' rounded-lg bg-[#171717] overflow-hidden md:row-span-2'>
-								<img
+								<Image
 									src='/personal/nyoman.png'
 									alt=''
+									width={500}
+									height={500}
 									className='object-cover grayscale'
 								/>
 							</div>
@@ -504,7 +506,7 @@ export default function Home() {
 								data-aos-delay='50'
 								className='border border-[#262626] rounded-lg p-2 md:flex items-center gap-4 mb-4'>
 								<div className='border border-[#262626] rounded-lg overflow-hidden lg:w-1/2'>
-									<img src='/benner/ai.png' alt='' />
+									<Image src='/benner/ai.png' alt='' width={500} height={500} />
 								</div>
 								<div className='flex flex-col justify-between lg:w-1/2'>
 									<div className='p-4 flex justify-between items-baseline border-dashed border-b-[0.5px] border-[#262626]'>
@@ -531,7 +533,12 @@ export default function Home() {
 								data-aos-delay='50'
 								className='border border-[#262626] rounded-lg p-2 md:flex items-center gap-4 mb-4'>
 								<div className='border border-[#262626] rounded-lg overflow-hidden lg:w-1/2'>
-									<img src='/benner/kursus.png' alt='' />
+									<Image
+										src='/benner/kursus.png'
+										alt=''
+										width={500}
+										height={500}
+									/>
 								</div>
 								<div className='flex flex-col justify-between lg:w-1/2'>
 									<div className='p-4 flex justify-between items-baseline border-dashed border-b-[0.5px] border-[#262626]'>
@@ -561,7 +568,12 @@ export default function Home() {
 								data-aos-delay='50'
 								className='border border-[#262626] rounded-lg p-2 md:flex items-center gap-4 mb-4'>
 								<div className='border border-[#262626] rounded-lg overflow-hidden lg:w-1/2'>
-									<img src='/benner/donasi.png' alt='' />
+									<Image
+										src='/benner/donasi.png'
+										alt=''
+										width={500}
+										height={500}
+									/>
 								</div>
 								<div className='flex flex-col justify-between lg:w-1/2'>
 									<div className='p-4 flex justify-between items-baseline border-dashed border-b-[0.5px] border-[#262626]'>
@@ -591,7 +603,12 @@ export default function Home() {
 								data-aos-delay='50'
 								className='border border-[#262626] rounded-lg p-2 md:flex items-center gap-4'>
 								<div className='border border-[#262626] rounded-lg overflow-hidden lg:w-1/2'>
-									<img src='/benner/spk.png' alt='' />
+									<Image
+										src='/benner/spk.png'
+										alt=''
+										width={500}
+										height={500}
+									/>
 								</div>
 								<div className='flex flex-col justify-between lg:w-1/2'>
 									<div className='p-4 flex justify-between items-baseline border-dashed border-b-[0.5px] border-[#262626]'>
