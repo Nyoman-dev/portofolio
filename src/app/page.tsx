@@ -251,7 +251,12 @@ export default function Home() {
 									className='w-full rounded-lg bg-[#09090a] p-4 md:p-6 border-[1px] border-[#262626]'>
 									<div className='flex gap-4 items-center'>
 										<div className='w-14 rounded-xl bg-[#18181a] border-[1px] border-[#262626]'>
-											<img src='/icons/tbk/tbk.png' alt='' />
+											<Image
+												width={100}
+												height={100}
+												src='/icons/tbk/tbk.png'
+												alt=''
+											/>
 										</div>
 										<div className='grid grid-cols-3 md:grid-cols-12'>
 											<h3 className='font-bold text-base col-span-3 md:col-span-4 '>
@@ -310,7 +315,9 @@ export default function Home() {
 								data-aos-delay='200'
 								className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border-[1px] border-[#262626]'>
 								<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border-[1px] border-[#262626]'>
-									<img
+									<Image
+										width={100}
+										height={100}
 										src='/icons/teknologi/next-js.svg'
 										alt='tailwind'
 										className='w-3/4 bg-white rounded-full'
@@ -328,7 +335,9 @@ export default function Home() {
 								data-aos-delay='250'
 								className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border-[1px] border-[#262626]'>
 								<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border-[1px] border-[#262626]'>
-									<img
+									<Image
+										width={100}
+										height={100}
 										src='/icons/teknologi/tailwind.svg'
 										alt='tailwind'
 										className='w-3/4'
@@ -346,7 +355,9 @@ export default function Home() {
 								data-aos-delay='300'
 								className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border-[1px] border-[#262626]'>
 								<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border-[1px] border-[#262626]'>
-									<img
+									<Image
+										width={100}
+										height={100}
 										src='/icons/teknologi/laravel.png'
 										alt='tailwind'
 										className='w-3/4'
@@ -364,7 +375,9 @@ export default function Home() {
 								data-aos-delay='400'
 								className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border-[1px] border-[#262626]'>
 								<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border-[1px] border-[#262626]'>
-									<img
+									<Image
+										width={100}
+										height={100}
 										src='/icons/teknologi/react.svg'
 										alt='tailwind'
 										className='w-3/4'
@@ -382,7 +395,9 @@ export default function Home() {
 								data-aos-delay='500'
 								className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border-[1px] border-[#262626]'>
 								<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border-[1px] border-[#262626]'>
-									<img
+									<Image
+										width={100}
+										height={100}
 										src='/icons/teknologi/mysql.svg'
 										alt='tailwind'
 										className='w-3/4'
@@ -400,7 +415,9 @@ export default function Home() {
 								data-aos-delay='600'
 								className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border-[1px] border-[#262626]'>
 								<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border-[1px] border-[#262626]'>
-									<img
+									<Image
+										width={100}
+										height={100}
 										src='/icons/teknologi/github.svg'
 										alt='tailwind'
 										className='w-3/4 bg-white rounded-full'
