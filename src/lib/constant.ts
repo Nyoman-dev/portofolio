@@ -19,12 +19,12 @@ export const myStack = [
 	},
 	{
 		name: "Laravel",
-		img: "/icons/teknologi/laravel.png",
+		img: "/icons/teknologi/laravel.gif",
 		deskripsi: "PHP Framework",
 	},
 	{
 		name: "React JS",
-		img: "/icons/teknologi/react.svg",
+		img: "/icons/teknologi/react.gif",
 		deskripsi: "Javascipt Library",
 	},
 	{
