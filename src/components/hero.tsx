@@ -60,7 +60,7 @@ export default function HeroImage() {
 			onMouseLeave={handleMouseLeave}>
 			{/* BASE grayscale */}
 			<Image
-				src='/personal/hero.jpg'
+				src='/personal/hero.JPG'
 				alt='nyoman'
 				width={500}
 				height={500}
@@ -69,7 +69,7 @@ export default function HeroImage() {
 
 			{/* COLOR layer */}
 			<MotionImage
-				src='/personal/hero.jpg'
+				src='/personal/hero.JPG'
 				alt='nyoman'
 				width={500}
 				height={500}
