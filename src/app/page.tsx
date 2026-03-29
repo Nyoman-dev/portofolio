@@ -19,13 +19,38 @@ import Footer from "@/components/footer";
 import { myStack } from "@/lib/constant";
 import { project } from "@/lib/constant";
 import HeroImage from "@/components/hero";
-import Carousel from "@/components/carousel";
+import ThreeDCarousel, {
+	ThreeDCarouselItem,
+} from "@/components/lightswind/3d-carousel";
 
 export default function Home() {
 	useEffect(() => {
 		AOS.init({ once: false, duration: 800, disable: false });
 		AOS.refresh();
 	}, []);
+
+	// const items: ThreeDCarouselItem[] = [
+	// 	{
+	// 		id: 1,
+	// 		title: "6th SENSE Safety System",
+	// 		brand: "FireCat Group",
+	// 		description:
+	// 			"AI-driven smart uniform tech for law enforcement, military & firefighters.",
+	// 		tags: ["Safety", "Military", "AI Sensors", "Monitoring"],
+	// 		imageUrl: "/img/firecat.jpg",
+	// 		link: "/projects/firecat",
+	// 	},
+	// 	{
+	// 		id: 2,
+	// 		title: "6th SENSE Safety System",
+	// 		brand: "FireCat Group blalalbal",
+	// 		description:
+	// 			"AI-driven smart uniform tech for law enforcement, military & firefighters.",
+	// 		tags: ["Safety", "Military", "AI Sensors", "Monitoring"],
+	// 		imageUrl: "/img/firecat.jpg",
+	// 		link: "/projects/firecat",
+	// 	},
+	// ];
 
 	return (
 		<main className='font-grotesk lg:grid grid-cols-8 relative'>
@@ -35,12 +60,12 @@ export default function Home() {
 			<div className='border-b border-[#2c2c2c] p-4 md:p-8 flex items-center justify-between col-span-6'>
 				<p
 					data-aos='flip-down'
-					className='rounded-full text-xs bg-[#171717] p-2 border-[1px] border-[#2c2c2c]'>
+					className='rounded-full text-xs bg-[#171717] p-2 border border-[#2c2c2c]'>
 					Web Developer
 				</p>
 			</div>
 			{/* main content */}
-			<div className='col-span-6 mx-4 md:mx-10'>
+			<div className='col-span-6 mx-3 md:mx-5'>
 				<div className='pt-10 lg:px-40 md:pt-20 '>
 					<section id='hero' className='scroll-mt-20'>
 						<div className='grid grid-cols-3 gap-x-4 '>
@@ -162,14 +187,14 @@ export default function Home() {
 									data-aos-anchor-placement='center-bottom'
 									data-aos-duration='1000'
 									data-aos-delay='100'
-									className='w-full rounded-lg bg-[#09090a] p-4 md:p-6 border-[1px] border-[#262626]'>
+									className='w-full rounded-lg bg-[#09090a] p-4 md:p-6 border border-[#262626]'>
 									<div className='flex gap-4 items-center'>
-										<div className='w-14 rounded-xl bg-[#18181a] border-[1px] border-[#262626]'>
+										<div className='w-14 rounded-xl bg-[#18181a] border border-[#262626]'>
 											<Image width={100} height={100} src='/icons/tbk/tbk.png' alt='' />
 										</div>
 										<div className='grid grid-cols-2 w-full'>
 											<h3 className='font-bold text-base '>BENSMULTI.</h3>
-											<p className='text-sm text-[#a3a3a3] mr-1 order-last md:order-none md:hidden'>
+											<p className='text-sm text-[#a3a3a3] mr-1 order-last md:order-0 md:hidden'>
 												@BENSMULTI
 											</p>
 											<p className='text-sm font-semibold text-[#a3a3a3] md:text-lg w-full text-end'>
@@ -180,7 +205,7 @@ export default function Home() {
 											</p>
 										</div>
 									</div>
-									<div className='w-full bg-black p-3 mt-4 rounded-md border-[1px] border-[#262626]'>
+									<div className='w-full bg-black p-3 mt-4 rounded-md border border-[#262626]'>
 										<h3 className='font-bold'>Full Stack Web Developer</h3>
 										<p className='text-[#717171] text-sm mt-1 tracking-wide text-justify'>
 											Develop and enhance existing web application features with a focus on
@@ -218,8 +243,8 @@ export default function Home() {
 									data-aos-anchor-placement='center-bottom'
 									data-aos-duration='900'
 									data-aos-delay='200'
-									className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border-[1px] border-[#262626]'>
-									<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border-[1px] border-[#262626]'>
+									className='w-[48%] md:w-[32%] bg-[#09090a] rounded-xl p-2 flex gap-3 items-center border border-[#262626]'>
+									<div className='w-12 h-12 rounded-lg bg-[#18181a] flex justify-center items-center border border-[#262626]'>
 										<Image
 											width={100}
 											height={100}
@@ -230,7 +255,7 @@ export default function Home() {
 									</div>
 									<div>
 										<h4 className='font-bold'>{stack.name}</h4>
-										<p className='text-xs text-[#827f82]'>{stack.deskripsi}</p>
+										<p className='text-xs text-[#827f82]'>{stack.description}</p>
 									</div>
 								</div>
 							))}
@@ -260,7 +285,7 @@ export default function Home() {
 								data-aos-delay='100'
 								className='w-full md:w-[49%]  bg-[#09090a] rounded-lg p-4 border border-[#262626]'>
 								<div className='flex gap-4'>
-									<div className='w-[160px] bg-[#18181a] border border-[#262626] rounded-lg flex justify-center items-center'>
+									<div className='w-40 bg-[#18181a] border border-[#262626] rounded-lg flex justify-center items-center'>
 										<CgBrowser className='w-8 h-8' />
 									</div>
 									<div className='flex flex-col w-5/6'>
@@ -279,7 +304,7 @@ export default function Home() {
 								data-aos-delay='150'
 								className='w-full md:w-[49%] bg-[#09090a] rounded-lg p-4 border border-[#262626]'>
 								<div className='flex gap-4'>
-									<div className='w-[160px] bg-[#18181a] border border-[#262626] rounded-lg flex justify-center items-center'>
+									<div className='w-40 bg-[#18181a] border border-[#262626] rounded-lg flex justify-center items-center'>
 										<MdContactPage className='w-8 h-8' />
 									</div>
 									<div className='flex flex-col w-5/6'>
@@ -325,39 +350,13 @@ export default function Home() {
 							className='pt-3 pb-9'>
 							Showcasing my products that I have made.
 						</motion.p>
-						{project.map((project, index) => (
-							<motion.div
-								key={index}
-								initial={{ x: -100, opacity: 0 }}
-								whileInView={{ x: 0, opacity: 1 }}
-								transition={{ duration: 0.8, ease: "easeInOut" }}
-								viewport={{ once: false, amount: 0.3 }}
-								className='border border-[#262626] rounded-lg p-2 md:flex items-center gap-4 mb-4'>
-								<div className='border border-[#262626] rounded-lg overflow-hidden md:w-[60%] lg:w-1/2'>
-									<Image src={project.img} alt='' width={500} height={500} />
-								</div>
-								<div className='flex flex-col justify-between md:w-[40%] lg:w-1/2'>
-									<div className='p-4 flex justify-between items-baseline border-dashed border-b-[0.5px] border-[#262626]'>
-										<h4 className='font-bold text-lg'>{project.title}</h4>
-										<p className='text-[#a3a3a3] '>• Free</p>
-									</div>
-									<div className='text-[#a3a3a3] py-4 flex justify-evenly border-dashed border-b-[0.5px] border-[#262626] md:gap-2'>
-										{project.stack.map((stack, index) => {
-											const Icon = stack.icon;
-											return (
-												<div className='flex items-center gap-1' key={index}>
-													<Icon /> {stack.name}
-												</div>
-											);
-										})}
-									</div>
-									<div className='pt-4 px-4'>
-										<p>{project.deskripsi}</p>
-									</div>
-								</div>
-							</motion.div>
-						))}
-						{/* <Carousel></Carousel> */}
+						<ThreeDCarousel
+							items={project}
+							autoRotate={true}
+							rotateInterval={4000}
+							cardHeight={500}
+							isMobileSwipe={true}
+						/>
 					</section>
 				</div>
 			</div>
