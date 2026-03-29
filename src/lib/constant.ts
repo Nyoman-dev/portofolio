@@ -10,46 +10,48 @@ export const myStack = [
 	{
 		name: "Next JS",
 		img: "/icons/teknologi/next-js.svg",
-		deskripsi: "Framework React Web",
+		description: "Framework React Web",
 	},
 	{
 		name: "Tailwind CSS",
 		img: "/icons/teknologi/tailwind.svg",
-		deskripsi: "CSS Framework",
+		description: "CSS Framework",
 	},
 	{
 		name: "Laravel",
 		img: "/icons/teknologi/laravel.gif",
-		deskripsi: "PHP Framework",
+		description: "PHP Framework",
 	},
 	{
 		name: "React JS",
 		img: "/icons/teknologi/react.gif",
-		deskripsi: "Javascipt Library",
+		description: "Javascipt Library",
 	},
 	{
 		name: "MySQL",
 		img: "/icons/teknologi/mysql.svg",
-		deskripsi: "Database",
+		description: "Database",
 	},
 	{
 		name: "Github",
 		img: "/icons/teknologi/github.svg",
-		deskripsi: "Repository",
+		description: "Repository",
 	},
 ];
 
 export const project = [
 	{
+		id: 1,
 		img: "/benner/ai.png",
 		title: "Ask to AI",
 		stack: [
 			{ icon: IoLogoLaravel, name: "Laravel" },
 			{ icon: RiTailwindCssLine, name: "Tailwind" },
 		],
-		deskripsi: "Ask discover new things",
+		description: "Ask discover new things",
 	},
 	{
+		id: 2,
 		img: "/benner/kursus.png",
 		title: "Course Registration",
 		stack: [
@@ -57,9 +59,10 @@ export const project = [
 			{ icon: RiTailwindCssLine, name: "Tailwind" },
 			{ icon: IoRocketOutline, name: "Filament" },
 		],
-		deskripsi: "Online Enrollment System",
+		description: "Online Enrollment System",
 	},
 	{
+		id: 3,
 		img: "/benner/donasi.png",
 		title: "Donation Raising",
 		stack: [
@@ -67,7 +70,7 @@ export const project = [
 			{ icon: RiTailwindCssLine, name: "Tailwind" },
 			{ icon: IoRocketOutline, name: "Filament" },
 		],
-		deskripsi: "Donation System with Payment Gateway",
+		description: "Donation System with Payment Gateway",
 	},
 ];
 
